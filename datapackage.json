@@ -1,0 +1,84 @@
+{
+  "name": "bizdex-ugens-register",
+  "title": "Ugens register: nye virksomheder og konkurser i Danmark, uge for uge",
+  "description": "Antal virksomheder stiftet (stiftelsesdato) og antal konkursdekreter (dekretdato) pr. ISO-uge, fordelt på virksomhedsform, kommune og branche. Opgjort fra CVR-registret fra og med uge 28, 2026. En uge udgives otte dage efter ugens afslutning og er foreløbig i 28 dage. Kun antal, ingen virksomhedsnavne.",
+  "homepage": "https://bizdex.dk/register",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0 — kreditér «Bizdex, baseret på CVR (Erhvervsstyrelsen)»"
+    }
+  ],
+  "sources": [
+    {
+      "title": "CVR – Det Centrale Virksomhedsregister, Erhvervsstyrelsen",
+      "path": "https://datacvr.virk.dk"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Bizdex",
+      "path": "https://bizdex.dk",
+      "role": "publisher"
+    }
+  ],
+  "resources": [
+    {
+      "name": "ugens-register",
+      "path": "data/ugens-register.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "uge",
+            "type": "string",
+            "description": "ISO-uge, ÅÅÅÅ-UU"
+          },
+          {
+            "name": "mandag",
+            "type": "date",
+            "description": "Ugens første dag"
+          },
+          {
+            "name": "soendag",
+            "type": "date",
+            "description": "Ugens sidste dag"
+          },
+          {
+            "name": "haendelse",
+            "type": "string",
+            "description": "nye_virksomheder eller konkurser"
+          },
+          {
+            "name": "dimension",
+            "type": "string",
+            "description": "i_alt, virksomhedsform, kommune eller branche"
+          },
+          {
+            "name": "kode",
+            "type": "string",
+            "description": "Branchekoden som registreret i CVR for dimension branche, ellers tom"
+          },
+          {
+            "name": "navn",
+            "type": "string",
+            "description": "Virksomhedsform, kommune eller branche"
+          },
+          {
+            "name": "antal",
+            "type": "integer",
+            "description": "Antal virksomheder"
+          },
+          {
+            "name": "foreloebige_tal",
+            "type": "string",
+            "description": "ja, mens ugens tal stadig kan stige"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Danish new companies and bankruptcies, weekly",
+  "id": "jacobbarlach/danish-new-companies-and-bankruptcies-weekly",
+  "subtitle": "Founded companies and bankruptcy decrees per ISO week, by form, municipality and industry",
+  "description": "Weekly counts of companies founded (by founding date) and bankruptcy decrees (by decree date) in Denmark, by company form, municipality and industry code, compiled from the Danish business register (CVR) by Bizdex — https://bizdex.dk/register. From ISO week 28 of 2026, updated every Monday. A week is published eight days after it ends and stays preliminary (foreloebige_tal = ja) for 28 days. Counts only, no company names. Source and licence: CC BY 4.0 — credit «Bizdex, based on CVR (Erhvervsstyrelsen)» with a link to https://bizdex.dk/register.",
+  "licenses": [{"name": "CC-BY-4.0"}],
+  "keywords": ["business", "denmark", "economics"]
+}
